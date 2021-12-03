@@ -1,0 +1,20 @@
+api:
+    name: 'API: @project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+
+server:
+    port: 8080
+    servlet:
+        context-path: /petshop
+
+spring:
+    application:
+        name: api-petshop
+    data:
+        mongodb:
+            uri: mongodb+srv://admin:aSWQd6PICxRKgJbu@cluster0.zzgej.mongodb.net/petshop?retryWrites=true&w=majority
+logging:
+    level:
+        org.mongodb.driver.cluster: off
+        co.infoprice: debug
